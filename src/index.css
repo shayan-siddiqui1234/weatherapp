@@ -6,6 +6,244 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.searchBar{
+width:30%;
+height:25px;
+align-items: center;
+margin: 5% 25% 0% 1%;
+border: 2px solid rgb(38, 38, 92);
+border-radius: 0px;
+padding:5px;
+font-size: 14px;
+
+} 
+
+.searchBtn{
+  width:10%;
+  height:38px;
+font-size: 16px;
+  margin: 5% -10% 3% -23%;
+  padding: 5px;
+  border: 2px solid rgb(38, 38, 92);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border-radius: 50px;
+}
+
+#wName{
+text-align: center;
+}
+
+#wDescription{
+
+  text-align: center;
+  font-size: 22px;
+}
+
+#wTemp{
+font-size: 94px;
+  text-align: center;
+  margin-top: 1%;
+  padding: 5px;
+  margin-bottom: 1%;
+}
+
+
+#degree{
+  font-size: 25px;
+}
+
+.humwind{
+  display: inline-flex;
+  
+  margin: -3% 15% 0% 38%;
+  padding: 2px 2px 2px 2px;
+
+}
+
+.detail{
+  display: inline-table;
+  padding: 0px 30px 0px 30px;
+  text-align: center;
+  font-size: 40px;
+  background-size: contain;
+ background-color:transparent;
+
+}
+
+/* loader */
+.loader {
+  border: 8px solid #7a7a7a;
+  border-radius: 50%;
+  border-top: 8px solid #5c5a5a;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 1s linear infinite;
+  margin:25% 49% 25% 49%;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* themetoggle */
+.Bright{
+  background-image: url('assets/chuttersnap-TSgwbumanuE-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-color: transparent;
+  color: black;
+  
+
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* .Brightmain{
+  background-image: url('assets/chuttersnap-TSgwbumanuE-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: transparent;
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.Bright .detail {
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+  
+}
+
+/* .Brightmain .detail{
+  background-color: rgb(255, 255, 255);
+  opacity: 0.5;
+}
+
+.Brightmain #dtl{
+  margin: 0.5% 6% 0% 7%;
+}
+ */
+.Bright #dtl{
+  margin: 0.5% 6% 0% 7%;
+}
+
+.Dark .detail{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.Dark #dtl{
+  margin: 0.5% 6% 0% 7%;
+}
+
+/* .Darkmain .detail{
+  background-color: rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.Darkmain #dtl{
+  margin: 0.5% 6% 0% 7%;
+} */
+
+
+.Dark{
+  background-image: url('assets/jackson-hendry-eodA_8CTOFo-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+ 
+  background-color: transparent;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* .Darkmain{
+  background-image: url('assets/jackson-hendry-eodA_8CTOFo-unsplash.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: rgb(255, 255, 255);
+ 
+  background-color: transparent;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+.switch {
+  margin-left: 27%;
+  margin-right: 2%;
+  margin-top: -5%;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 27px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(228, 225, 225);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 1px;
+  background-color: transparent;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-image: url('assets/bright.png');
+  background-size: 26px 26px;
+}
+
+input:checked + .slider {
+  background-color: rgb(228, 225, 225);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px rgb(228, 225, 225);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  background-image: url('assets/dark.png');
+  background-size: 26px 26px;
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
