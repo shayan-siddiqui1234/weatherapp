@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/shayan-siddiqui1234/weatherapp.git/static/css/main.c868ce47.chunk.css",
+    "main.js": "/shayan-siddiqui1234/weatherapp.git/static/js/main.7e252312.chunk.js",
+    "main.js.map": "/shayan-siddiqui1234/weatherapp.git/static/js/main.7e252312.chunk.js.map",
+    "runtime-main.js": "/shayan-siddiqui1234/weatherapp.git/static/js/runtime-main.ec1bd0bf.js",
+    "runtime-main.js.map": "/shayan-siddiqui1234/weatherapp.git/static/js/runtime-main.ec1bd0bf.js.map",
+    "static/js/2.f3321727.chunk.js": "/shayan-siddiqui1234/weatherapp.git/static/js/2.f3321727.chunk.js",
+    "static/js/2.f3321727.chunk.js.map": "/shayan-siddiqui1234/weatherapp.git/static/js/2.f3321727.chunk.js.map",
+    "static/js/3.1024d4a5.chunk.js": "/shayan-siddiqui1234/weatherapp.git/static/js/3.1024d4a5.chunk.js",
+    "static/js/3.1024d4a5.chunk.js.map": "/shayan-siddiqui1234/weatherapp.git/static/js/3.1024d4a5.chunk.js.map",
+    "index.html": "/shayan-siddiqui1234/weatherapp.git/index.html",
+    "static/css/main.c868ce47.chunk.css.map": "/shayan-siddiqui1234/weatherapp.git/static/css/main.c868ce47.chunk.css.map",
+    "static/js/2.f3321727.chunk.js.LICENSE.txt": "/shayan-siddiqui1234/weatherapp.git/static/js/2.f3321727.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/shayan-siddiqui1234/weatherapp.git/static/media/weather.60a4e954.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ec1bd0bf.js",
+    "static/js/2.f3321727.chunk.js",
+    "static/css/main.c868ce47.chunk.css",
+    "static/js/main.7e252312.chunk.js"
+  ]
+}
