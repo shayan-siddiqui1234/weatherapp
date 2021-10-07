@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(weather.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-style: dashed;
+  border-color:aquamarine
 }
 .searchBar{
 width:30%;
@@ -14,7 +19,8 @@ margin: 5% 25% 0% 1%;
 border: 2px solid rgb(38, 38, 92);
 border-radius: 0px;
 padding:5px;
-font-size: 14px;
+font-size: 12px;
+border-color:blueviolet
 
 } 
 

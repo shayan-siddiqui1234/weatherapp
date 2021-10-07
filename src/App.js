@@ -9,20 +9,17 @@ function App() {
     const [city,setcity] = useState(null);
     let lat = JSON.parse(localStorage.getItem('lat'))
     let long = JSON.parse(localStorage.getItem('long'))
-    const [isBright, setIsDark] =useState(true);
-    const [isB, setIsD] =useState(true);
+    // const [isBright, setIsDark] =useState(true);
+    // const [isB, setIsD] =useState(true);
   //   const display = document.querySelector('body');
   // display.className = isBright ? "Bright" : "Dark";
 
-  const display = document.querySelector('body');
-  display.className = isBright ? "Bright" : "Dark";
-  const theme = () => {
+  // const display = document.querySelector('body');
+  // display.className = isBright ? "Bright" : "Dark";
+  // const theme = () => {
   //   const display = document.querySelector('body');
   // display.className = isBright ? "Bright" : "Dark";
-    setIsDark(!isBright);
-    
-  }
-
+   
   // var main=document.getElementById("main")
     useEffect(()=>{
       let date = new Date();
@@ -30,11 +27,11 @@ function App() {
  
       // let display2=document.querySelector('body');
       //    display2.className = isB ? "Darkmain" : "Brightmain";
-        if(time>=19 || time<6){
-          // document.querySelector('.Darkmain');
-          const display = document.querySelector('body');
-          display.className = isBright ? "Bright" : "Dark";
-            setIsDark(!isBright);
+        // if(time>=19 || time<6){
+        //   // document.querySelector('.Darkmain');
+        //   const display = document.querySelector('body');
+        //   display.className = isBright ? "Bright" : "Dark";
+        //     setIsDark(!isBright);
             
 
           
@@ -52,7 +49,7 @@ function App() {
           // if(time<19 || time>6){
           // main.innerHTML=`<img src=${pic2} alt="asd" width="200px" height="200px"/>`
           // console.log("data")
-          }
+          
           
         
     if(city != null){
@@ -89,9 +86,9 @@ function App() {
           <>
           <label class="switch">
         <input type="checkbox"></input>
-        <span onClick={theme} class="slider round"> </span>
+  
       </label>
-          <input class="searchBar" placeholder="Enter city" id="city"/>
+          <input class="searchBar" placeholder="Check Weather OF any Country" id="city"/>
             <button class="searchBtn" onClick={()=>{
                 setcity(document.getElementById('city').value);
              
